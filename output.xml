@@ -1,229 +1,367 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.2 (Python 3.10.20 on linux)" generated="2026-03-26T13:55:45.326409" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.2 (Python 3.10.20 on linux)" generated="2026-03-26T13:58:28.802926" rpa="false" schemaversion="5">
 <suite id="s1" name="Features" source="/home/runner/work/RobotFrameworkExample/RobotFrameworkExample/test/features">
 <suite id="s1-s1" name="elementosBasicos" source="/home/runner/work/RobotFrameworkExample/RobotFrameworkExample/test/features/elementosBasicos.robot">
 <test id="s1-s1-t1" name="CT-00 - Validação visualizar página inicial" line="7">
 <kw name="Abrir Sessao" owner="globalKeywords" type="SETUP">
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2026-03-26T13:55:45.783983" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x7f032779cdc0&gt;</msg>
+<msg time="2026-03-26T13:58:29.465511" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x7fd1786ecdc0&gt;</msg>
 <var>${options}</var>
 <arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
 <arg>sys, selenium.webdriver</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2026-03-26T13:55:45.782656" elapsed="0.001374"/>
+<status status="PASS" start="2026-03-26T13:58:29.464286" elapsed="0.001272"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--no-sandbox</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2026-03-26T13:55:45.784227" elapsed="0.000357"/>
+<status status="PASS" start="2026-03-26T13:58:29.465745" elapsed="0.000330"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--disable-dev-shm-usage</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2026-03-26T13:55:45.784736" elapsed="0.000314"/>
+<status status="PASS" start="2026-03-26T13:58:29.466223" elapsed="0.000349"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--disable-gpu</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2026-03-26T13:55:45.785195" elapsed="0.000296"/>
+<status status="PASS" start="2026-03-26T13:58:29.466713" elapsed="0.000283"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
-<msg time="2026-03-26T13:55:45.786021" level="FAIL">Calling method 'add_argument' failed: TypeError: ArgOptions.add_argument() got an unexpected keyword argument '--window-size'</msg>
 <arg>${options}</arg>
 <arg>add_argument</arg>
-<arg>--window-size=1920,1080</arg>
+<arg>--window-size\=1920,1080</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="FAIL" start="2026-03-26T13:55:45.785655" elapsed="0.000479">Calling method 'add_argument' failed: TypeError: ArgOptions.add_argument() got an unexpected keyword argument '--window-size'</status>
+<status status="PASS" start="2026-03-26T13:58:29.467141" elapsed="0.000339"/>
 </kw>
 <kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-26T13:58:29.467991" level="INFO">Opening browser 'chrome' to base url 'https://playground-for-qa.vercel.app/playground'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <arg>options=${options}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="NOT RUN" start="2026-03-26T13:55:45.786320" elapsed="0.000036"/>
+<status status="PASS" start="2026-03-26T13:58:29.467666" elapsed="14.398749"/>
 </kw>
 <doc>Abre o navegador na URL com opções otimizadas para CI/CD.</doc>
-<status status="FAIL" start="2026-03-26T13:55:45.780257" elapsed="0.006240">Calling method 'add_argument' failed: TypeError: ArgOptions.add_argument() got an unexpected keyword argument '--window-size'</status>
+<status status="PASS" start="2026-03-26T13:58:29.462077" elapsed="14.404551"/>
+</kw>
+<kw name="Dado que estou na tela incicial QA Playground" owner="elementosBasicos">
+<kw name="Get Location" owner="SeleniumLibrary">
+<msg time="2026-03-26T13:58:43.950531" level="INFO">${url_atual} = https://playground-for-qa.vercel.app/playground</msg>
+<var>${url_atual}</var>
+<doc>Returns the current browser window URL.</doc>
+<status status="PASS" start="2026-03-26T13:58:43.867699" elapsed="0.082899"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${url_atual}</arg>
+<arg>${URL}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2026-03-26T13:58:43.950867" elapsed="0.000564"/>
+</kw>
+<status status="PASS" start="2026-03-26T13:58:43.867036" elapsed="0.084519"/>
 </kw>
 <kw name="Fechar Sessao" owner="globalKeywords" type="TEARDOWN">
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2026-03-26T13:55:45.787269" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2026-03-26T13:58:44.443701" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2026-03-26T13:55:45.787137" elapsed="0.000191"/>
+<status status="PASS" start="2026-03-26T13:58:43.952347" elapsed="0.491505"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-03-26T13:55:45.787462" elapsed="0.000134"/>
+<status status="PASS" start="2026-03-26T13:58:44.444111" elapsed="0.061030"/>
 </kw>
 <doc>Tira uma evidência e fecha o navegador ao final do teste.</doc>
-<status status="PASS" start="2026-03-26T13:55:45.786826" elapsed="0.000847"/>
+<status status="PASS" start="2026-03-26T13:58:43.951964" elapsed="0.553374"/>
 </kw>
 <tag>CT-00</tag>
 <tag>guilherme.evangelista</tag>
 <tag>qa.front</tag>
-<status status="FAIL" start="2026-03-26T13:55:45.779045" elapsed="0.008685">Setup failed:
-Calling method 'add_argument' failed: TypeError: ArgOptions.add_argument() got an unexpected keyword argument '--window-size'</status>
+<status status="PASS" start="2026-03-26T13:58:29.461058" elapsed="15.044368"/>
 </test>
 <test id="s1-s1-t2" name="CT-01 - Interação com o botão Clique aqui" line="11">
 <kw name="Abrir Sessao" owner="globalKeywords" type="SETUP">
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2026-03-26T13:55:45.789488" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x7f032779ec20&gt;</msg>
+<msg time="2026-03-26T13:58:44.507361" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x7fd1787456c0&gt;</msg>
 <var>${options}</var>
 <arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
 <arg>sys, selenium.webdriver</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2026-03-26T13:55:45.789096" elapsed="0.000429"/>
+<status status="PASS" start="2026-03-26T13:58:44.506808" elapsed="0.000609"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--no-sandbox</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2026-03-26T13:55:45.789700" elapsed="0.000313"/>
+<status status="PASS" start="2026-03-26T13:58:44.507619" elapsed="0.000340"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--disable-dev-shm-usage</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2026-03-26T13:55:45.790151" elapsed="0.000289"/>
+<status status="PASS" start="2026-03-26T13:58:44.508115" elapsed="0.000362"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--disable-gpu</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2026-03-26T13:55:45.790601" elapsed="0.000284"/>
+<status status="PASS" start="2026-03-26T13:58:44.508626" elapsed="0.000298"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
-<msg time="2026-03-26T13:55:45.791346" level="FAIL">Calling method 'add_argument' failed: TypeError: ArgOptions.add_argument() got an unexpected keyword argument '--window-size'</msg>
 <arg>${options}</arg>
 <arg>add_argument</arg>
-<arg>--window-size=1920,1080</arg>
+<arg>--window-size\=1920,1080</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="FAIL" start="2026-03-26T13:55:45.791025" elapsed="0.000406">Calling method 'add_argument' failed: TypeError: ArgOptions.add_argument() got an unexpected keyword argument '--window-size'</status>
+<status status="PASS" start="2026-03-26T13:58:44.509062" elapsed="0.000350"/>
 </kw>
 <kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-26T13:58:44.509888" level="INFO">Opening browser 'chrome' to base url 'https://playground-for-qa.vercel.app/playground'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <arg>options=${options}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="NOT RUN" start="2026-03-26T13:55:45.791617" elapsed="0.000035"/>
+<status status="PASS" start="2026-03-26T13:58:44.509584" elapsed="0.653860"/>
 </kw>
 <doc>Abre o navegador na URL com opções otimizadas para CI/CD.</doc>
-<status status="FAIL" start="2026-03-26T13:55:45.788819" elapsed="0.002939">Calling method 'add_argument' failed: TypeError: ArgOptions.add_argument() got an unexpected keyword argument '--window-size'</status>
+<status status="PASS" start="2026-03-26T13:58:44.506460" elapsed="0.657252"/>
+</kw>
+<kw name="Dado que estou na tela incicial QA Playground" owner="elementosBasicos">
+<kw name="Get Location" owner="SeleniumLibrary">
+<msg time="2026-03-26T13:58:45.210932" level="INFO">${url_atual} = https://playground-for-qa.vercel.app/playground</msg>
+<var>${url_atual}</var>
+<doc>Returns the current browser window URL.</doc>
+<status status="PASS" start="2026-03-26T13:58:45.164805" elapsed="0.046202"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${url_atual}</arg>
+<arg>${URL}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2026-03-26T13:58:45.211300" elapsed="0.000530"/>
+</kw>
+<status status="PASS" start="2026-03-26T13:58:45.164179" elapsed="0.047753"/>
+</kw>
+<kw name="Quando clico no botão clique aqui" owner="elementosBasicos">
+<kw name="Clicar No Elemento" owner="globalKeywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-03-26T13:58:45.212863" elapsed="0.155639"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=${timeout}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2026-03-26T13:58:45.368904" elapsed="0.028622"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-03-26T13:58:45.398176" level="INFO">Clicking element '//*[contains(text(),'Clique aqui')]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-26T13:58:45.397826" elapsed="0.070825"/>
+</kw>
+<arg>${BOTAO_CLIQUE_AQUI}</arg>
+<doc>Aguarda o elemento ficar visível e habilitado para clique, e então clica.</doc>
+<status status="PASS" start="2026-03-26T13:58:45.212492" elapsed="0.256346"/>
+</kw>
+<status status="PASS" start="2026-03-26T13:58:45.212127" elapsed="0.256800"/>
+</kw>
+<kw name="Entao valido que o botão clique aqui possui um clique" owner="elementosBasicos">
+<kw name="Validar Texto No Elemento" owner="globalKeywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-03-26T13:58:45.470060" elapsed="0.016105"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2026-03-26T13:58:45.506478" level="INFO">Element '//*[contains(text(),'Clique aqui')]' contains text '1'.</msg>
+<arg>${locator}</arg>
+<arg>${texto_esperado}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="PASS" start="2026-03-26T13:58:45.486489" elapsed="0.020128"/>
+</kw>
+<arg>${BOTAO_CLIQUE_AQUI}</arg>
+<arg>1</arg>
+<doc>Aguarda o elemento e valida se ele contém o texto esperado.</doc>
+<status status="PASS" start="2026-03-26T13:58:45.469634" elapsed="0.037122"/>
+</kw>
+<status status="PASS" start="2026-03-26T13:58:45.469205" elapsed="0.037665"/>
 </kw>
 <kw name="Fechar Sessao" owner="globalKeywords" type="TEARDOWN">
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2026-03-26T13:55:45.792411" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2026-03-26T13:58:45.928091" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2026-03-26T13:55:45.792300" elapsed="0.000168"/>
+<status status="PASS" start="2026-03-26T13:58:45.507731" elapsed="0.420513"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-03-26T13:55:45.792613" elapsed="0.000112"/>
+<status status="PASS" start="2026-03-26T13:58:45.928541" elapsed="0.060844"/>
 </kw>
 <doc>Tira uma evidência e fecha o navegador ao final do teste.</doc>
-<status status="PASS" start="2026-03-26T13:55:45.792013" elapsed="0.000781"/>
+<status status="PASS" start="2026-03-26T13:58:45.507330" elapsed="0.482218"/>
 </kw>
 <tag>CT-01</tag>
 <tag>guilherme.evangelista</tag>
 <tag>qa.front</tag>
-<status status="FAIL" start="2026-03-26T13:55:45.788100" elapsed="0.004748">Setup failed:
-Calling method 'add_argument' failed: TypeError: ArgOptions.add_argument() got an unexpected keyword argument '--window-size'</status>
+<status status="PASS" start="2026-03-26T13:58:44.505837" elapsed="1.483795"/>
 </test>
 <test id="s1-s1-t3" name="CT-02 - Interação com o botão Duplo Clique" line="17">
 <kw name="Abrir Sessao" owner="globalKeywords" type="SETUP">
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2026-03-26T13:55:45.794393" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x7f03277e4af0&gt;</msg>
+<msg time="2026-03-26T13:58:45.992090" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x7fd1787474c0&gt;</msg>
 <var>${options}</var>
 <arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
 <arg>sys, selenium.webdriver</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2026-03-26T13:55:45.793997" elapsed="0.000433"/>
+<status status="PASS" start="2026-03-26T13:58:45.991414" elapsed="0.000717"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--no-sandbox</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2026-03-26T13:55:45.794650" elapsed="0.000311"/>
+<status status="PASS" start="2026-03-26T13:58:45.992315" elapsed="0.000338"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--disable-dev-shm-usage</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2026-03-26T13:55:45.795103" elapsed="0.000288"/>
+<status status="PASS" start="2026-03-26T13:58:45.992800" elapsed="0.000299"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--disable-gpu</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2026-03-26T13:55:45.795526" elapsed="0.000307"/>
+<status status="PASS" start="2026-03-26T13:58:45.993240" elapsed="0.000377"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
-<msg time="2026-03-26T13:55:45.796289" level="FAIL">Calling method 'add_argument' failed: TypeError: ArgOptions.add_argument() got an unexpected keyword argument '--window-size'</msg>
 <arg>${options}</arg>
 <arg>add_argument</arg>
-<arg>--window-size=1920,1080</arg>
+<arg>--window-size\=1920,1080</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="FAIL" start="2026-03-26T13:55:45.795967" elapsed="0.000420">Calling method 'add_argument' failed: TypeError: ArgOptions.add_argument() got an unexpected keyword argument '--window-size'</status>
+<status status="PASS" start="2026-03-26T13:58:45.993764" elapsed="0.000320"/>
 </kw>
 <kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-26T13:58:45.994599" level="INFO">Opening browser 'chrome' to base url 'https://playground-for-qa.vercel.app/playground'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <arg>options=${options}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="NOT RUN" start="2026-03-26T13:55:45.796579" elapsed="0.000039"/>
+<status status="PASS" start="2026-03-26T13:58:45.994249" elapsed="0.634657"/>
 </kw>
 <doc>Abre o navegador na URL com opções otimizadas para CI/CD.</doc>
-<status status="FAIL" start="2026-03-26T13:55:45.793731" elapsed="0.002993">Calling method 'add_argument' failed: TypeError: ArgOptions.add_argument() got an unexpected keyword argument '--window-size'</status>
+<status status="PASS" start="2026-03-26T13:58:45.990968" elapsed="0.638121"/>
+</kw>
+<kw name="Dado que estou na tela incicial QA Playground" owner="elementosBasicos">
+<kw name="Get Location" owner="SeleniumLibrary">
+<msg time="2026-03-26T13:58:46.664661" level="INFO">${url_atual} = https://playground-for-qa.vercel.app/playground</msg>
+<var>${url_atual}</var>
+<doc>Returns the current browser window URL.</doc>
+<status status="PASS" start="2026-03-26T13:58:46.629947" elapsed="0.034782"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${url_atual}</arg>
+<arg>${URL}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2026-03-26T13:58:46.664994" elapsed="0.000563"/>
+</kw>
+<status status="PASS" start="2026-03-26T13:58:46.629459" elapsed="0.036200"/>
+</kw>
+<kw name="Quando clico no botão duplo clique" owner="elementosBasicos">
+<kw name="Duplo Clique No Elemento" owner="globalKeywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-03-26T13:58:46.666596" elapsed="0.150852"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=${timeout}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2026-03-26T13:58:46.817834" elapsed="0.068420"/>
+</kw>
+<kw name="Double Click Element" owner="SeleniumLibrary">
+<msg time="2026-03-26T13:58:46.887056" level="INFO">Double clicking element '//*[contains(text(),'Duplo clique')]'.</msg>
+<arg>${locator}</arg>
+<doc>Double clicks the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-26T13:58:46.886648" elapsed="0.399928"/>
+</kw>
+<arg>${BOTAO_DUPLO_CLIQUE}</arg>
+<doc>Aguarda o elemento e executa um duplo clique.</doc>
+<status status="PASS" start="2026-03-26T13:58:46.666195" elapsed="0.620558"/>
+</kw>
+<status status="PASS" start="2026-03-26T13:58:46.665858" elapsed="0.620983"/>
+</kw>
+<kw name="Entao valido que o botão duplo clique possui um clique" owner="elementosBasicos">
+<kw name="Validar Texto No Elemento" owner="globalKeywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-03-26T13:58:47.287971" elapsed="0.014234"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2026-03-26T13:58:47.320980" level="INFO">Element '//*[contains(text(),'Duplo clique')]' contains text '1'.</msg>
+<arg>${locator}</arg>
+<arg>${texto_esperado}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="PASS" start="2026-03-26T13:58:47.302469" elapsed="0.018630"/>
+</kw>
+<arg>${BOTAO_DUPLO_CLIQUE}</arg>
+<arg>1</arg>
+<doc>Aguarda o elemento e valida se ele contém o texto esperado.</doc>
+<status status="PASS" start="2026-03-26T13:58:47.287546" elapsed="0.033675"/>
+</kw>
+<status status="PASS" start="2026-03-26T13:58:47.287117" elapsed="0.034218"/>
 </kw>
 <kw name="Fechar Sessao" owner="globalKeywords" type="TEARDOWN">
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2026-03-26T13:55:45.797372" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2026-03-26T13:58:47.707763" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2026-03-26T13:55:45.797265" elapsed="0.000164"/>
+<status status="PASS" start="2026-03-26T13:58:47.322060" elapsed="0.385911"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-03-26T13:55:45.797574" elapsed="0.000115"/>
+<status status="PASS" start="2026-03-26T13:58:47.708251" elapsed="0.060900"/>
 </kw>
 <doc>Tira uma evidência e fecha o navegador ao final do teste.</doc>
-<status status="PASS" start="2026-03-26T13:55:45.796974" elapsed="0.000785"/>
+<status status="PASS" start="2026-03-26T13:58:47.321684" elapsed="0.447671"/>
 </kw>
 <tag>CT-02</tag>
 <tag>guilherme.evangelista</tag>
 <tag>qa.front</tag>
-<status status="FAIL" start="2026-03-26T13:55:45.793156" elapsed="0.004657">Setup failed:
-Calling method 'add_argument' failed: TypeError: ArgOptions.add_argument() got an unexpected keyword argument '--window-size'</status>
+<status status="PASS" start="2026-03-26T13:58:45.990080" elapsed="1.779364"/>
 </test>
-<status status="FAIL" start="2026-03-26T13:55:45.357148" elapsed="0.441263"/>
+<status status="PASS" start="2026-03-26T13:58:28.832723" elapsed="18.937393"/>
 </suite>
-<status status="FAIL" start="2026-03-26T13:55:45.327361" elapsed="0.471825"/>
+<status status="PASS" start="2026-03-26T13:58:28.803839" elapsed="18.967133"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="3" skip="0">All Tests</stat>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="0" fail="1" skip="0">CT-00</stat>
-<stat pass="0" fail="1" skip="0">CT-01</stat>
-<stat pass="0" fail="1" skip="0">CT-02</stat>
-<stat pass="0" fail="3" skip="0">guilherme.evangelista</stat>
-<stat pass="0" fail="3" skip="0">qa.front</stat>
+<stat pass="1" fail="0" skip="0">CT-00</stat>
+<stat pass="1" fail="0" skip="0">CT-01</stat>
+<stat pass="1" fail="0" skip="0">CT-02</stat>
+<stat pass="3" fail="0" skip="0">guilherme.evangelista</stat>
+<stat pass="3" fail="0" skip="0">qa.front</stat>
 </tag>
 <suite>
-<stat name="Features" id="s1" pass="0" fail="3" skip="0">Features</stat>
-<stat name="elementosBasicos" id="s1-s1" pass="0" fail="3" skip="0">Features.elementosBasicos</stat>
+<stat name="Features" id="s1" pass="3" fail="0" skip="0">Features</stat>
+<stat name="elementosBasicos" id="s1-s1" pass="3" fail="0" skip="0">Features.elementosBasicos</stat>
 </suite>
 </statistics>
 <errors>
