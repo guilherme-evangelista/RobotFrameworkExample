@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.10.20 on linux)" generated="2026-03-26T13:50:53.308221" rpa="false" schemaversion="5">
+<suite id="s1" name="Features" source="/home/runner/work/RobotFrameworkExample/RobotFrameworkExample/test/features">
+<suite id="s1-s1" name="elementosBasicos" source="/home/runner/work/RobotFrameworkExample/RobotFrameworkExample/test/features/elementosBasicos.robot">
+<test id="s1-s1-t1" name="CT-00 - Validação visualizar página inicial" line="7">
+<kw name="Abrir Sessao" owner="globalKeywords" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-26T13:50:53.803753" level="INFO">Opening browser 'chrome' to base url 'https://playground-for-qa.vercel.app/playground'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-26T13:50:53.803440" elapsed="8.989538"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<msg time="2026-03-26T13:51:03.446182" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-03-26T13:51:03.446429" level="FAIL">WebDriverException: Message: unknown error: JavaScript code failed
+from unknown command: 'Runtime.evaluate' wasn't found
+  (Session info: chrome=145.0.7632.159)
+Stacktrace:
+#0 0x558f1c5eab6a &lt;unknown&gt;
+#1 0x558f1bffda32 &lt;unknown&gt;
+#2 0x558f1bfe43db &lt;unknown&gt;
+#3 0x558f1bfe2906 &lt;unknown&gt;
+#4 0x558f1bfe30bf &lt;unknown&gt;
+#5 0x558f1c012e9e &lt;unknown&gt;
+#6 0x558f1c006f01 &lt;unknown&gt;
+#7 0x558f1c006df2 &lt;unknown&gt;
+#8 0x558f1bfd41ff &lt;unknown&gt;
+#9 0x558f1bfd260d &lt;unknown&gt;
+#10 0x558f1c0b0862 &lt;unknown&gt;
+#11 0x558f1c09b369 &lt;unknown&gt;
+#12 0x558f1c044c0f &lt;unknown&gt;
+#13 0x558f1c0459d1 &lt;unknown&gt;
+#14 0x558f1c5af6b9 &lt;unknown&gt;
+#15 0x558f1c5b25c1 &lt;unknown&gt;
+#16 0x558f1c59be29 &lt;unknown&gt;
+#17 0x558f1c5b317e &lt;unknown&gt;
+#18 0x558f1c5824b0 &lt;unknown&gt;
+#19 0x558f1c5d7578 &lt;unknown&gt;
+#20 0x558f1c5d774b &lt;unknown&gt;
+#21 0x558f1c5e91a3 &lt;unknown&gt;
+#22 0x7fa8f6e9caa4 &lt;unknown&gt;
+#23 0x7fa8f6f29c6c &lt;unknown&gt;
+</msg>
+<doc>Maximizes current browser window.</doc>
+<status status="FAIL" start="2026-03-26T13:51:02.793305" elapsed="0.653887">WebDriverException: Message: unknown error: JavaScript code failed
+from unknown command: 'Runtime.evaluate' wasn't found
+  (Session info: chrome=145.0.7632.159)
+Stacktrace:
+#0 0x558f1c5eab6a &lt;unknown&gt;
+#1 0x558f1bffda32 &lt;unknown&gt;
+#2 0x558f1bfe43db &lt;unknown&gt;
+#3 0x558f1bfe2906 &lt;unknown&gt;
+#4 0x558f1bfe30bf &lt;unknown&gt;
+#5 0x558f1c012e9e &lt;unknown&gt;
+#6 0x558f1c006f01 &lt;unknown&gt;
+#7 0x558f1c006df2 &lt;unknown&gt;
+#8 0x558f1bfd41ff &lt;unknown&gt;
+#9 0x558f1bfd260d &lt;unknown&gt;
+#10 0x558f1c0b0862 &lt;unknown&gt;
+#11 0x558f1c09b369 &lt;unknown&gt;
+#12 0x558f1c044c0f &lt;unknown&gt;
+#13 0x558f1c0459d1 &lt;unknown&gt;
+#14 0x558f1c5af6b9 &lt;unknown&gt;
+#15 0x558f1c5b25c1 &lt;unknown&gt;
+#16 0x558f1c59be29 &lt;unknown&gt;
+#17 0x558f1c5b317e &lt;unknown&gt;
+#18 0x558f1c5824b0 &lt;unknown&gt;
+#19 0x558f1c5d7578 &lt;unknown&gt;
+#20 0x558f1c5d774b &lt;unknown&gt;
+#21 0x558f1c5e91a3 &lt;unknown&gt;
+#22 0x7fa8f6e9caa4 &lt;unknown&gt;
+#23 0x7fa8f6f29c6c &lt;unknown&gt;
+</status>
+</kw>
+<doc>Abre o navegador na URL e maximiza a tela.</doc>
+<status status="FAIL" start="2026-03-26T13:50:53.801308" elapsed="9.646134">WebDriverException: Message: unknown error: JavaScript code failed
+from unknown command: 'Runtime.evaluate' wasn't found
+  (Session info: chrome=145.0.7632.159)
+Stacktrace:
+#0 0x558f1c5eab6a &lt;unknown&gt;
+#1 0x558f1bffda32 &lt;unknown&gt;
+#2 0x558f1bfe43db &lt;unknown&gt;
+#3 0x558f1bfe2906 &lt;unknown&gt;
+#4 0x558f1bfe30bf &lt;unknown&gt;
+#5 0x558f1c012e9e &lt;unknown&gt;
+#6 0x558f1c006f01 &lt;unknown&gt;
+#7 0x558f1c006df2 &lt;unknown&gt;
+#8 0x558f1bfd41ff &lt;unknown&gt;
+#9 0x558f1bfd260d &lt;unknown&gt;
+#10 0x558f1c0b0862 &lt;unknown&gt;
+#11 0x558f1c09b369 &lt;unknown&gt;
+#12 0x558f1c044c0f &lt;unknown&gt;
+#13 0x558f1c0459d1 &lt;unknown&gt;
+#14 0x558f1c5af6b9 &lt;unknown&gt;
+#15 0x558f1c5b25c1 &lt;unknown&gt;
+#16 0x558f1c59be29 &lt;unknown&gt;
+#17 0x558f1c5b317e &lt;unknown&gt;
+#18 0x558f1c5824b0 &lt;unknown&gt;
+#19 0x558f1c5d7578 &lt;unknown&gt;
+#20 0x558f1c5d774b &lt;unknown&gt;
+#21 0x558f1c5e91a3 &lt;unknown&gt;
+#22 0x7fa8f6e9caa4 &lt;unknown&gt;
+#23 0x7fa8f6f29c6c &lt;unknown&gt;
+</status>
+</kw>
+<kw name="Fechar Sessao" owner="globalKeywords" type="TEARDOWN">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-03-26T13:51:03.638060" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-03-26T13:51:03.448267" elapsed="0.189960"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-03-26T13:51:03.638561" elapsed="0.060367"/>
+</kw>
+<doc>Tira uma evidência e fecha o navegador ao final do teste.</doc>
+<status status="PASS" start="2026-03-26T13:51:03.447876" elapsed="0.251208"/>
+</kw>
+<tag>CT-00</tag>
+<tag>guilherme.evangelista</tag>
+<tag>qa.front</tag>
+<status status="FAIL" start="2026-03-26T13:50:53.800386" elapsed="9.898786">Setup failed:
+WebDriverException: Message: unknown error: JavaScript code failed
+from unknown command: 'Runtime.evaluate' wasn't found
+  (Session info: chrome=145.0.7632.159)
+Stacktrace:
+#0 0x558f1c5eab6a &lt;unknown&gt;
+#1 0x558f1bffda32 &lt;unknown&gt;
+#2 0x558f1bfe43db &lt;unknown&gt;
+#3 0x558f1bfe2906 &lt;unknown&gt;
+#4 0x558f1bfe30bf &lt;unknown&gt;
+#5 0x558f1c012e9e &lt;unknown&gt;
+#6 0x558f1c006f01 &lt;unknown&gt;
+#7 0x558f1c006df2 &lt;unknown&gt;
+#8 0x558f1bfd41ff &lt;unknown&gt;
+#9 0x558f1bfd260d &lt;unknown&gt;
+#10 0x558f1c0b0862 &lt;unknown&gt;
+#11 0x558f1c09b369 &lt;unknown&gt;
+#12 0x558f1c044c0f &lt;unknown&gt;
+#13 0x558f1c0459d1 &lt;unknown&gt;
+#14 0x558f1c5af6b9 &lt;unknown&gt;
+#15 0x558f1c5b25c1 &lt;unknown&gt;
+#16 0x558f1c59be29 &lt;unknown&gt;
+#17 0x558f1c5b317e &lt;unknown&gt;
+#18 0x558f1c5824b0 &lt;unknown&gt;
+#19 0x558f1c5d7578 &lt;unknown&gt;
+#20 0x558f1c5d774b &lt;unknown&gt;
+#21 0x558f1c5e91a3 &lt;unknown&gt;
+#22 0x7fa8f6e9caa4 &lt;unknown&gt;
+#23 0x7fa8f6f29c6c &lt;unknown&gt;
+</status>
+</test>
+<test id="s1-s1-t2" name="CT-01 - Interação com o botão Clique aqui" line="11">
+<kw name="Abrir Sessao" owner="globalKeywords" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-26T13:51:03.700864" level="INFO">Opening browser 'chrome' to base url 'https://playground-for-qa.vercel.app/playground'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-26T13:51:03.700583" elapsed="0.646787"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<msg time="2026-03-26T13:51:04.873833" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-03-26T13:51:04.874050" level="FAIL">WebDriverException: Message: unknown error: JavaScript code failed
+from unknown command: 'Runtime.evaluate' wasn't found
+  (Session info: chrome=145.0.7632.159)
+Stacktrace:
+#0 0x556ffb803b6a &lt;unknown&gt;
+#1 0x556ffb216a32 &lt;unknown&gt;
+#2 0x556ffb1fd3db &lt;unknown&gt;
+#3 0x556ffb1fb906 &lt;unknown&gt;
+#4 0x556ffb1fc0bf &lt;unknown&gt;
+#5 0x556ffb22be9e &lt;unknown&gt;
+#6 0x556ffb21ff01 &lt;unknown&gt;
+#7 0x556ffb21fdf2 &lt;unknown&gt;
+#8 0x556ffb1ed1ff &lt;unknown&gt;
+#9 0x556ffb1eb60d &lt;unknown&gt;
+#10 0x556ffb2c9862 &lt;unknown&gt;
+#11 0x556ffb2b4369 &lt;unknown&gt;
+#12 0x556ffb25dc0f &lt;unknown&gt;
+#13 0x556ffb25e9d1 &lt;unknown&gt;
+#14 0x556ffb7c86b9 &lt;unknown&gt;
+#15 0x556ffb7cb5c1 &lt;unknown&gt;
+#16 0x556ffb7b4e29 &lt;unknown&gt;
+#17 0x556ffb7cc17e &lt;unknown&gt;
+#18 0x556ffb79b4b0 &lt;unknown&gt;
+#19 0x556ffb7f0578 &lt;unknown&gt;
+#20 0x556ffb7f074b &lt;unknown&gt;
+#21 0x556ffb8021a3 &lt;unknown&gt;
+#22 0x7fb76d09caa4 &lt;unknown&gt;
+#23 0x7fb76d129c6c &lt;unknown&gt;
+</msg>
+<doc>Maximizes current browser window.</doc>
+<status status="FAIL" start="2026-03-26T13:51:04.347770" elapsed="0.526505">WebDriverException: Message: unknown error: JavaScript code failed
+from unknown command: 'Runtime.evaluate' wasn't found
+  (Session info: chrome=145.0.7632.159)
+Stacktrace:
+#0 0x556ffb803b6a &lt;unknown&gt;
+#1 0x556ffb216a32 &lt;unknown&gt;
+#2 0x556ffb1fd3db &lt;unknown&gt;
+#3 0x556ffb1fb906 &lt;unknown&gt;
+#4 0x556ffb1fc0bf &lt;unknown&gt;
+#5 0x556ffb22be9e &lt;unknown&gt;
+#6 0x556ffb21ff01 &lt;unknown&gt;
+#7 0x556ffb21fdf2 &lt;unknown&gt;
+#8 0x556ffb1ed1ff &lt;unknown&gt;
+#9 0x556ffb1eb60d &lt;unknown&gt;
+#10 0x556ffb2c9862 &lt;unknown&gt;
+#11 0x556ffb2b4369 &lt;unknown&gt;
+#12 0x556ffb25dc0f &lt;unknown&gt;
+#13 0x556ffb25e9d1 &lt;unknown&gt;
+#14 0x556ffb7c86b9 &lt;unknown&gt;
+#15 0x556ffb7cb5c1 &lt;unknown&gt;
+#16 0x556ffb7b4e29 &lt;unknown&gt;
+#17 0x556ffb7cc17e &lt;unknown&gt;
+#18 0x556ffb79b4b0 &lt;unknown&gt;
+#19 0x556ffb7f0578 &lt;unknown&gt;
+#20 0x556ffb7f074b &lt;unknown&gt;
+#21 0x556ffb8021a3 &lt;unknown&gt;
+#22 0x7fb76d09caa4 &lt;unknown&gt;
+#23 0x7fb76d129c6c &lt;unknown&gt;
+</status>
+</kw>
+<doc>Abre o navegador na URL e maximiza a tela.</doc>
+<status status="FAIL" start="2026-03-26T13:51:03.700184" elapsed="1.174317">WebDriverException: Message: unknown error: JavaScript code failed
+from unknown command: 'Runtime.evaluate' wasn't found
+  (Session info: chrome=145.0.7632.159)
+Stacktrace:
+#0 0x556ffb803b6a &lt;unknown&gt;
+#1 0x556ffb216a32 &lt;unknown&gt;
+#2 0x556ffb1fd3db &lt;unknown&gt;
+#3 0x556ffb1fb906 &lt;unknown&gt;
+#4 0x556ffb1fc0bf &lt;unknown&gt;
+#5 0x556ffb22be9e &lt;unknown&gt;
+#6 0x556ffb21ff01 &lt;unknown&gt;
+#7 0x556ffb21fdf2 &lt;unknown&gt;
+#8 0x556ffb1ed1ff &lt;unknown&gt;
+#9 0x556ffb1eb60d &lt;unknown&gt;
+#10 0x556ffb2c9862 &lt;unknown&gt;
+#11 0x556ffb2b4369 &lt;unknown&gt;
+#12 0x556ffb25dc0f &lt;unknown&gt;
+#13 0x556ffb25e9d1 &lt;unknown&gt;
+#14 0x556ffb7c86b9 &lt;unknown&gt;
+#15 0x556ffb7cb5c1 &lt;unknown&gt;
+#16 0x556ffb7b4e29 &lt;unknown&gt;
+#17 0x556ffb7cc17e &lt;unknown&gt;
+#18 0x556ffb79b4b0 &lt;unknown&gt;
+#19 0x556ffb7f0578 &lt;unknown&gt;
+#20 0x556ffb7f074b &lt;unknown&gt;
+#21 0x556ffb8021a3 &lt;unknown&gt;
+#22 0x7fb76d09caa4 &lt;unknown&gt;
+#23 0x7fb76d129c6c &lt;unknown&gt;
+</status>
+</kw>
+<kw name="Fechar Sessao" owner="globalKeywords" type="TEARDOWN">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-03-26T13:51:05.178045" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-03-26T13:51:04.875295" elapsed="0.302910"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-03-26T13:51:05.178495" elapsed="0.060991"/>
+</kw>
+<doc>Tira uma evidência e fecha o navegador ao final do teste.</doc>
+<status status="PASS" start="2026-03-26T13:51:04.874902" elapsed="0.364742"/>
+</kw>
+<tag>CT-01</tag>
+<tag>guilherme.evangelista</tag>
+<tag>qa.front</tag>
+<status status="FAIL" start="2026-03-26T13:51:03.699630" elapsed="1.540101">Setup failed:
+WebDriverException: Message: unknown error: JavaScript code failed
+from unknown command: 'Runtime.evaluate' wasn't found
+  (Session info: chrome=145.0.7632.159)
+Stacktrace:
+#0 0x556ffb803b6a &lt;unknown&gt;
+#1 0x556ffb216a32 &lt;unknown&gt;
+#2 0x556ffb1fd3db &lt;unknown&gt;
+#3 0x556ffb1fb906 &lt;unknown&gt;
+#4 0x556ffb1fc0bf &lt;unknown&gt;
+#5 0x556ffb22be9e &lt;unknown&gt;
+#6 0x556ffb21ff01 &lt;unknown&gt;
+#7 0x556ffb21fdf2 &lt;unknown&gt;
+#8 0x556ffb1ed1ff &lt;unknown&gt;
+#9 0x556ffb1eb60d &lt;unknown&gt;
+#10 0x556ffb2c9862 &lt;unknown&gt;
+#11 0x556ffb2b4369 &lt;unknown&gt;
+#12 0x556ffb25dc0f &lt;unknown&gt;
+#13 0x556ffb25e9d1 &lt;unknown&gt;
+#14 0x556ffb7c86b9 &lt;unknown&gt;
+#15 0x556ffb7cb5c1 &lt;unknown&gt;
+#16 0x556ffb7b4e29 &lt;unknown&gt;
+#17 0x556ffb7cc17e &lt;unknown&gt;
+#18 0x556ffb79b4b0 &lt;unknown&gt;
+#19 0x556ffb7f0578 &lt;unknown&gt;
+#20 0x556ffb7f074b &lt;unknown&gt;
+#21 0x556ffb8021a3 &lt;unknown&gt;
+#22 0x7fb76d09caa4 &lt;unknown&gt;
+#23 0x7fb76d129c6c &lt;unknown&gt;
+</status>
+</test>
+<test id="s1-s1-t3" name="CT-02 - Interação com o botão Duplo Clique" line="17">
+<kw name="Abrir Sessao" owner="globalKeywords" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-26T13:51:05.241773" level="INFO">Opening browser 'chrome' to base url 'https://playground-for-qa.vercel.app/playground'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-26T13:51:05.241458" elapsed="0.655175"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<msg time="2026-03-26T13:51:06.439185" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-03-26T13:51:06.439420" level="FAIL">WebDriverException: Message: unknown error: JavaScript code failed
+from unknown command: 'Runtime.evaluate' wasn't found
+  (Session info: chrome=145.0.7632.159)
+Stacktrace:
+#0 0x561406939b6a &lt;unknown&gt;
+#1 0x56140634ca32 &lt;unknown&gt;
+#2 0x5614063333db &lt;unknown&gt;
+#3 0x561406331906 &lt;unknown&gt;
+#4 0x5614063320bf &lt;unknown&gt;
+#5 0x561406361e9e &lt;unknown&gt;
+#6 0x561406355f01 &lt;unknown&gt;
+#7 0x561406355df2 &lt;unknown&gt;
+#8 0x5614063231ff &lt;unknown&gt;
+#9 0x56140632160d &lt;unknown&gt;
+#10 0x5614063ff862 &lt;unknown&gt;
+#11 0x5614063ea369 &lt;unknown&gt;
+#12 0x561406393c0f &lt;unknown&gt;
+#13 0x5614063949d1 &lt;unknown&gt;
+#14 0x5614068fe6b9 &lt;unknown&gt;
+#15 0x5614069015c1 &lt;unknown&gt;
+#16 0x5614068eae29 &lt;unknown&gt;
+#17 0x56140690217e &lt;unknown&gt;
+#18 0x5614068d14b0 &lt;unknown&gt;
+#19 0x561406926578 &lt;unknown&gt;
+#20 0x56140692674b &lt;unknown&gt;
+#21 0x5614069381a3 &lt;unknown&gt;
+#22 0x7f3e46e9caa4 &lt;unknown&gt;
+#23 0x7f3e46f29c6c &lt;unknown&gt;
+</msg>
+<doc>Maximizes current browser window.</doc>
+<status status="FAIL" start="2026-03-26T13:51:05.897079" elapsed="0.542538">WebDriverException: Message: unknown error: JavaScript code failed
+from unknown command: 'Runtime.evaluate' wasn't found
+  (Session info: chrome=145.0.7632.159)
+Stacktrace:
+#0 0x561406939b6a &lt;unknown&gt;
+#1 0x56140634ca32 &lt;unknown&gt;
+#2 0x5614063333db &lt;unknown&gt;
+#3 0x561406331906 &lt;unknown&gt;
+#4 0x5614063320bf &lt;unknown&gt;
+#5 0x561406361e9e &lt;unknown&gt;
+#6 0x561406355f01 &lt;unknown&gt;
+#7 0x561406355df2 &lt;unknown&gt;
+#8 0x5614063231ff &lt;unknown&gt;
+#9 0x56140632160d &lt;unknown&gt;
+#10 0x5614063ff862 &lt;unknown&gt;
+#11 0x5614063ea369 &lt;unknown&gt;
+#12 0x561406393c0f &lt;unknown&gt;
+#13 0x5614063949d1 &lt;unknown&gt;
+#14 0x5614068fe6b9 &lt;unknown&gt;
+#15 0x5614069015c1 &lt;unknown&gt;
+#16 0x5614068eae29 &lt;unknown&gt;
+#17 0x56140690217e &lt;unknown&gt;
+#18 0x5614068d14b0 &lt;unknown&gt;
+#19 0x561406926578 &lt;unknown&gt;
+#20 0x56140692674b &lt;unknown&gt;
+#21 0x5614069381a3 &lt;unknown&gt;
+#22 0x7f3e46e9caa4 &lt;unknown&gt;
+#23 0x7f3e46f29c6c &lt;unknown&gt;
+</status>
+</kw>
+<doc>Abre o navegador na URL e maximiza a tela.</doc>
+<status status="FAIL" start="2026-03-26T13:51:05.240950" elapsed="1.198895">WebDriverException: Message: unknown error: JavaScript code failed
+from unknown command: 'Runtime.evaluate' wasn't found
+  (Session info: chrome=145.0.7632.159)
+Stacktrace:
+#0 0x561406939b6a &lt;unknown&gt;
+#1 0x56140634ca32 &lt;unknown&gt;
+#2 0x5614063333db &lt;unknown&gt;
+#3 0x561406331906 &lt;unknown&gt;
+#4 0x5614063320bf &lt;unknown&gt;
+#5 0x561406361e9e &lt;unknown&gt;
+#6 0x561406355f01 &lt;unknown&gt;
+#7 0x561406355df2 &lt;unknown&gt;
+#8 0x5614063231ff &lt;unknown&gt;
+#9 0x56140632160d &lt;unknown&gt;
+#10 0x5614063ff862 &lt;unknown&gt;
+#11 0x5614063ea369 &lt;unknown&gt;
+#12 0x561406393c0f &lt;unknown&gt;
+#13 0x5614063949d1 &lt;unknown&gt;
+#14 0x5614068fe6b9 &lt;unknown&gt;
+#15 0x5614069015c1 &lt;unknown&gt;
+#16 0x5614068eae29 &lt;unknown&gt;
+#17 0x56140690217e &lt;unknown&gt;
+#18 0x5614068d14b0 &lt;unknown&gt;
+#19 0x561406926578 &lt;unknown&gt;
+#20 0x56140692674b &lt;unknown&gt;
+#21 0x5614069381a3 &lt;unknown&gt;
+#22 0x7f3e46e9caa4 &lt;unknown&gt;
+#23 0x7f3e46f29c6c &lt;unknown&gt;
+</status>
+</kw>
+<kw name="Fechar Sessao" owner="globalKeywords" type="TEARDOWN">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-03-26T13:51:06.637530" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-03-26T13:51:06.440657" elapsed="0.197015"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-03-26T13:51:06.637928" elapsed="0.060874"/>
+</kw>
+<doc>Tira uma evidência e fecha o navegador ao final do teste.</doc>
+<status status="PASS" start="2026-03-26T13:51:06.440244" elapsed="0.258717"/>
+</kw>
+<tag>CT-02</tag>
+<tag>guilherme.evangelista</tag>
+<tag>qa.front</tag>
+<status status="FAIL" start="2026-03-26T13:51:05.240191" elapsed="1.458855">Setup failed:
+WebDriverException: Message: unknown error: JavaScript code failed
+from unknown command: 'Runtime.evaluate' wasn't found
+  (Session info: chrome=145.0.7632.159)
+Stacktrace:
+#0 0x561406939b6a &lt;unknown&gt;
+#1 0x56140634ca32 &lt;unknown&gt;
+#2 0x5614063333db &lt;unknown&gt;
+#3 0x561406331906 &lt;unknown&gt;
+#4 0x5614063320bf &lt;unknown&gt;
+#5 0x561406361e9e &lt;unknown&gt;
+#6 0x561406355f01 &lt;unknown&gt;
+#7 0x561406355df2 &lt;unknown&gt;
+#8 0x5614063231ff &lt;unknown&gt;
+#9 0x56140632160d &lt;unknown&gt;
+#10 0x5614063ff862 &lt;unknown&gt;
+#11 0x5614063ea369 &lt;unknown&gt;
+#12 0x561406393c0f &lt;unknown&gt;
+#13 0x5614063949d1 &lt;unknown&gt;
+#14 0x5614068fe6b9 &lt;unknown&gt;
+#15 0x5614069015c1 &lt;unknown&gt;
+#16 0x5614068eae29 &lt;unknown&gt;
+#17 0x56140690217e &lt;unknown&gt;
+#18 0x5614068d14b0 &lt;unknown&gt;
+#19 0x561406926578 &lt;unknown&gt;
+#20 0x56140692674b &lt;unknown&gt;
+#21 0x5614069381a3 &lt;unknown&gt;
+#22 0x7f3e46e9caa4 &lt;unknown&gt;
+#23 0x7f3e46f29c6c &lt;unknown&gt;
+</status>
+</test>
+<status status="FAIL" start="2026-03-26T13:50:53.337751" elapsed="13.362078"/>
+</suite>
+<status status="FAIL" start="2026-03-26T13:50:53.309088" elapsed="13.391733"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="3" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">CT-00</stat>
+<stat pass="0" fail="1" skip="0">CT-01</stat>
+<stat pass="0" fail="1" skip="0">CT-02</stat>
+<stat pass="0" fail="3" skip="0">guilherme.evangelista</stat>
+<stat pass="0" fail="3" skip="0">qa.front</stat>
+</tag>
+<suite>
+<stat name="Features" id="s1" pass="0" fail="3" skip="0">Features</stat>
+<stat name="elementosBasicos" id="s1-s1" pass="0" fail="3" skip="0">Features.elementosBasicos</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
