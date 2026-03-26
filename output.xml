@@ -1,152 +1,152 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.2 (Python 3.10.20 on linux)" generated="2026-03-26T13:58:28.802926" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.2 (Python 3.10.20 on linux)" generated="2026-03-26T14:11:50.316746" rpa="false" schemaversion="5">
 <suite id="s1" name="Features" source="/home/runner/work/RobotFrameworkExample/RobotFrameworkExample/test/features">
 <suite id="s1-s1" name="elementosBasicos" source="/home/runner/work/RobotFrameworkExample/RobotFrameworkExample/test/features/elementosBasicos.robot">
 <test id="s1-s1-t1" name="CT-00 - Validação visualizar página inicial" line="7">
 <kw name="Abrir Sessao" owner="globalKeywords" type="SETUP">
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2026-03-26T13:58:29.465511" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x7fd1786ecdc0&gt;</msg>
+<msg time="2026-03-26T14:11:50.724864" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x7faf2cafcdc0&gt;</msg>
 <var>${options}</var>
 <arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
 <arg>sys, selenium.webdriver</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2026-03-26T13:58:29.464286" elapsed="0.001272"/>
+<status status="PASS" start="2026-03-26T14:11:50.723685" elapsed="0.001244"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--no-sandbox</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2026-03-26T13:58:29.465745" elapsed="0.000330"/>
+<status status="PASS" start="2026-03-26T14:11:50.725122" elapsed="0.000314"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--disable-dev-shm-usage</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2026-03-26T13:58:29.466223" elapsed="0.000349"/>
+<status status="PASS" start="2026-03-26T14:11:50.725583" elapsed="0.000266"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--disable-gpu</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2026-03-26T13:58:29.466713" elapsed="0.000283"/>
+<status status="PASS" start="2026-03-26T14:11:50.725999" elapsed="0.000271"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--window-size\=1920,1080</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2026-03-26T13:58:29.467141" elapsed="0.000339"/>
+<status status="PASS" start="2026-03-26T14:11:50.726399" elapsed="0.000268"/>
 </kw>
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-03-26T13:58:29.467991" level="INFO">Opening browser 'chrome' to base url 'https://playground-for-qa.vercel.app/playground'.</msg>
+<msg time="2026-03-26T14:11:50.727142" level="INFO">Opening browser 'chrome' to base url 'https://playground-for-qa.vercel.app/playground'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <arg>options=${options}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-03-26T13:58:29.467666" elapsed="14.398749"/>
+<status status="PASS" start="2026-03-26T14:11:50.726820" elapsed="6.154937"/>
 </kw>
 <doc>Abre o navegador na URL com opções otimizadas para CI/CD.</doc>
-<status status="PASS" start="2026-03-26T13:58:29.462077" elapsed="14.404551"/>
+<status status="PASS" start="2026-03-26T14:11:50.721536" elapsed="6.160464"/>
 </kw>
 <kw name="Dado que estou na tela incicial QA Playground" owner="elementosBasicos">
 <kw name="Get Location" owner="SeleniumLibrary">
-<msg time="2026-03-26T13:58:43.950531" level="INFO">${url_atual} = https://playground-for-qa.vercel.app/playground</msg>
+<msg time="2026-03-26T14:11:56.923448" level="INFO">${url_atual} = https://playground-for-qa.vercel.app/playground</msg>
 <var>${url_atual}</var>
 <doc>Returns the current browser window URL.</doc>
-<status status="PASS" start="2026-03-26T13:58:43.867699" elapsed="0.082899"/>
+<status status="PASS" start="2026-03-26T14:11:56.882749" elapsed="0.040774"/>
 </kw>
 <kw name="Should Be Equal" owner="BuiltIn">
 <arg>${url_atual}</arg>
 <arg>${URL}</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" start="2026-03-26T13:58:43.950867" elapsed="0.000564"/>
+<status status="PASS" start="2026-03-26T14:11:56.923824" elapsed="0.000602"/>
 </kw>
-<status status="PASS" start="2026-03-26T13:58:43.867036" elapsed="0.084519"/>
+<status status="PASS" start="2026-03-26T14:11:56.882339" elapsed="0.042187"/>
 </kw>
 <kw name="Fechar Sessao" owner="globalKeywords" type="TEARDOWN">
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2026-03-26T13:58:44.443701" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-03-26T14:11:57.519174" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2026-03-26T13:58:43.952347" elapsed="0.491505"/>
+<status status="PASS" start="2026-03-26T14:11:56.925192" elapsed="0.594157"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-03-26T13:58:44.444111" elapsed="0.061030"/>
+<status status="PASS" start="2026-03-26T14:11:57.519641" elapsed="0.061597"/>
 </kw>
 <doc>Tira uma evidência e fecha o navegador ao final do teste.</doc>
-<status status="PASS" start="2026-03-26T13:58:43.951964" elapsed="0.553374"/>
+<status status="PASS" start="2026-03-26T14:11:56.924822" elapsed="0.656591"/>
 </kw>
 <tag>CT-00</tag>
 <tag>guilherme.evangelista</tag>
 <tag>qa.front</tag>
-<status status="PASS" start="2026-03-26T13:58:29.461058" elapsed="15.044368"/>
+<status status="PASS" start="2026-03-26T14:11:50.720529" elapsed="6.860967"/>
 </test>
 <test id="s1-s1-t2" name="CT-01 - Interação com o botão Clique aqui" line="11">
 <kw name="Abrir Sessao" owner="globalKeywords" type="SETUP">
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2026-03-26T13:58:44.507361" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x7fd1787456c0&gt;</msg>
+<msg time="2026-03-26T14:11:57.583409" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x7faf2cb656c0&gt;</msg>
 <var>${options}</var>
 <arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
 <arg>sys, selenium.webdriver</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2026-03-26T13:58:44.506808" elapsed="0.000609"/>
+<status status="PASS" start="2026-03-26T14:11:57.582852" elapsed="0.000595"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--no-sandbox</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2026-03-26T13:58:44.507619" elapsed="0.000340"/>
+<status status="PASS" start="2026-03-26T14:11:57.583592" elapsed="0.000288"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--disable-dev-shm-usage</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2026-03-26T13:58:44.508115" elapsed="0.000362"/>
+<status status="PASS" start="2026-03-26T14:11:57.584060" elapsed="0.000271"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--disable-gpu</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2026-03-26T13:58:44.508626" elapsed="0.000298"/>
+<status status="PASS" start="2026-03-26T14:11:57.584462" elapsed="0.000255"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--window-size\=1920,1080</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2026-03-26T13:58:44.509062" elapsed="0.000350"/>
+<status status="PASS" start="2026-03-26T14:11:57.584838" elapsed="0.000321"/>
 </kw>
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-03-26T13:58:44.509888" level="INFO">Opening browser 'chrome' to base url 'https://playground-for-qa.vercel.app/playground'.</msg>
+<msg time="2026-03-26T14:11:57.585617" level="INFO">Opening browser 'chrome' to base url 'https://playground-for-qa.vercel.app/playground'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <arg>options=${options}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-03-26T13:58:44.509584" elapsed="0.653860"/>
+<status status="PASS" start="2026-03-26T14:11:57.585326" elapsed="0.670094"/>
 </kw>
 <doc>Abre o navegador na URL com opções otimizadas para CI/CD.</doc>
-<status status="PASS" start="2026-03-26T13:58:44.506460" elapsed="0.657252"/>
+<status status="PASS" start="2026-03-26T14:11:57.582511" elapsed="0.673184"/>
 </kw>
 <kw name="Dado que estou na tela incicial QA Playground" owner="elementosBasicos">
 <kw name="Get Location" owner="SeleniumLibrary">
-<msg time="2026-03-26T13:58:45.210932" level="INFO">${url_atual} = https://playground-for-qa.vercel.app/playground</msg>
+<msg time="2026-03-26T14:11:58.339151" level="INFO">${url_atual} = https://playground-for-qa.vercel.app/playground</msg>
 <var>${url_atual}</var>
 <doc>Returns the current browser window URL.</doc>
-<status status="PASS" start="2026-03-26T13:58:45.164805" elapsed="0.046202"/>
+<status status="PASS" start="2026-03-26T14:11:58.256876" elapsed="0.082372"/>
 </kw>
 <kw name="Should Be Equal" owner="BuiltIn">
 <arg>${url_atual}</arg>
 <arg>${URL}</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" start="2026-03-26T13:58:45.211300" elapsed="0.000530"/>
+<status status="PASS" start="2026-03-26T14:11:58.339650" elapsed="0.000804"/>
 </kw>
-<status status="PASS" start="2026-03-26T13:58:45.164179" elapsed="0.047753"/>
+<status status="PASS" start="2026-03-26T14:11:58.256219" elapsed="0.084392"/>
 </kw>
 <kw name="Quando clico no botão clique aqui" owner="elementosBasicos">
 <kw name="Clicar No Elemento" owner="globalKeywords">
@@ -154,25 +154,25 @@
 <arg>${locator}</arg>
 <arg>timeout=${timeout}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-03-26T13:58:45.212863" elapsed="0.155639"/>
+<status status="PASS" start="2026-03-26T14:11:58.341983" elapsed="0.117551"/>
 </kw>
 <kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
 <arg>${locator}</arg>
 <arg>timeout=${timeout}</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" start="2026-03-26T13:58:45.368904" elapsed="0.028622"/>
+<status status="PASS" start="2026-03-26T14:11:58.459968" elapsed="0.033034"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2026-03-26T13:58:45.398176" level="INFO">Clicking element '//*[contains(text(),'Clique aqui')]'.</msg>
+<msg time="2026-03-26T14:11:58.493793" level="INFO">Clicking element '//*[contains(text(),'Clique aqui')]'.</msg>
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2026-03-26T13:58:45.397826" elapsed="0.070825"/>
+<status status="PASS" start="2026-03-26T14:11:58.493351" elapsed="0.193138"/>
 </kw>
 <arg>${BOTAO_CLIQUE_AQUI}</arg>
 <doc>Aguarda o elemento ficar visível e habilitado para clique, e então clica.</doc>
-<status status="PASS" start="2026-03-26T13:58:45.212492" elapsed="0.256346"/>
+<status status="PASS" start="2026-03-26T14:11:58.341446" elapsed="0.345232"/>
 </kw>
-<status status="PASS" start="2026-03-26T13:58:45.212127" elapsed="0.256800"/>
+<status status="PASS" start="2026-03-26T14:11:58.340934" elapsed="0.345824"/>
 </kw>
 <kw name="Entao valido que o botão clique aqui possui um clique" owner="elementosBasicos">
 <kw name="Validar Texto No Elemento" owner="globalKeywords">
@@ -180,103 +180,103 @@
 <arg>${locator}</arg>
 <arg>timeout=${timeout}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-03-26T13:58:45.470060" elapsed="0.016105"/>
+<status status="PASS" start="2026-03-26T14:11:58.687975" elapsed="0.015006"/>
 </kw>
 <kw name="Element Should Contain" owner="SeleniumLibrary">
-<msg time="2026-03-26T13:58:45.506478" level="INFO">Element '//*[contains(text(),'Clique aqui')]' contains text '1'.</msg>
+<msg time="2026-03-26T14:11:58.728020" level="INFO">Element '//*[contains(text(),'Clique aqui')]' contains text '1'.</msg>
 <arg>${locator}</arg>
 <arg>${texto_esperado}</arg>
 <doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<status status="PASS" start="2026-03-26T13:58:45.486489" elapsed="0.020128"/>
+<status status="PASS" start="2026-03-26T14:11:58.703249" elapsed="0.024992"/>
 </kw>
 <arg>${BOTAO_CLIQUE_AQUI}</arg>
 <arg>1</arg>
 <doc>Aguarda o elemento e valida se ele contém o texto esperado.</doc>
-<status status="PASS" start="2026-03-26T13:58:45.469634" elapsed="0.037122"/>
+<status status="PASS" start="2026-03-26T14:11:58.687520" elapsed="0.040918"/>
 </kw>
-<status status="PASS" start="2026-03-26T13:58:45.469205" elapsed="0.037665"/>
+<status status="PASS" start="2026-03-26T14:11:58.687084" elapsed="0.041465"/>
 </kw>
 <kw name="Fechar Sessao" owner="globalKeywords" type="TEARDOWN">
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2026-03-26T13:58:45.928091" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-03-26T14:11:59.155740" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2026-03-26T13:58:45.507731" elapsed="0.420513"/>
+<status status="PASS" start="2026-03-26T14:11:58.729698" elapsed="0.426242"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-03-26T13:58:45.928541" elapsed="0.060844"/>
+<status status="PASS" start="2026-03-26T14:11:59.156240" elapsed="0.061745"/>
 </kw>
 <doc>Tira uma evidência e fecha o navegador ao final do teste.</doc>
-<status status="PASS" start="2026-03-26T13:58:45.507330" elapsed="0.482218"/>
+<status status="PASS" start="2026-03-26T14:11:58.729115" elapsed="0.489050"/>
 </kw>
 <tag>CT-01</tag>
 <tag>guilherme.evangelista</tag>
 <tag>qa.front</tag>
-<status status="PASS" start="2026-03-26T13:58:44.505837" elapsed="1.483795"/>
+<status status="PASS" start="2026-03-26T14:11:57.581906" elapsed="1.636342"/>
 </test>
 <test id="s1-s1-t3" name="CT-02 - Interação com o botão Duplo Clique" line="17">
 <kw name="Abrir Sessao" owner="globalKeywords" type="SETUP">
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2026-03-26T13:58:45.992090" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x7fd1787474c0&gt;</msg>
+<msg time="2026-03-26T14:11:59.220635" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x7faf2cb67580&gt;</msg>
 <var>${options}</var>
 <arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
 <arg>sys, selenium.webdriver</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2026-03-26T13:58:45.991414" elapsed="0.000717"/>
+<status status="PASS" start="2026-03-26T14:11:59.219905" elapsed="0.000769"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--no-sandbox</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2026-03-26T13:58:45.992315" elapsed="0.000338"/>
+<status status="PASS" start="2026-03-26T14:11:59.220822" elapsed="0.000340"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--disable-dev-shm-usage</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2026-03-26T13:58:45.992800" elapsed="0.000299"/>
+<status status="PASS" start="2026-03-26T14:11:59.221302" elapsed="0.000262"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--disable-gpu</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2026-03-26T13:58:45.993240" elapsed="0.000377"/>
+<status status="PASS" start="2026-03-26T14:11:59.221692" elapsed="0.000277"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--window-size\=1920,1080</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2026-03-26T13:58:45.993764" elapsed="0.000320"/>
+<status status="PASS" start="2026-03-26T14:11:59.222103" elapsed="0.000272"/>
 </kw>
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-03-26T13:58:45.994599" level="INFO">Opening browser 'chrome' to base url 'https://playground-for-qa.vercel.app/playground'.</msg>
+<msg time="2026-03-26T14:11:59.222816" level="INFO">Opening browser 'chrome' to base url 'https://playground-for-qa.vercel.app/playground'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <arg>options=${options}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-03-26T13:58:45.994249" elapsed="0.634657"/>
+<status status="PASS" start="2026-03-26T14:11:59.222532" elapsed="0.666870"/>
 </kw>
 <doc>Abre o navegador na URL com opções otimizadas para CI/CD.</doc>
-<status status="PASS" start="2026-03-26T13:58:45.990968" elapsed="0.638121"/>
+<status status="PASS" start="2026-03-26T14:11:59.219553" elapsed="0.670108"/>
 </kw>
 <kw name="Dado que estou na tela incicial QA Playground" owner="elementosBasicos">
 <kw name="Get Location" owner="SeleniumLibrary">
-<msg time="2026-03-26T13:58:46.664661" level="INFO">${url_atual} = https://playground-for-qa.vercel.app/playground</msg>
+<msg time="2026-03-26T14:11:59.917972" level="INFO">${url_atual} = https://playground-for-qa.vercel.app/playground</msg>
 <var>${url_atual}</var>
 <doc>Returns the current browser window URL.</doc>
-<status status="PASS" start="2026-03-26T13:58:46.629947" elapsed="0.034782"/>
+<status status="PASS" start="2026-03-26T14:11:59.890847" elapsed="0.027223"/>
 </kw>
 <kw name="Should Be Equal" owner="BuiltIn">
 <arg>${url_atual}</arg>
 <arg>${URL}</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" start="2026-03-26T13:58:46.664994" elapsed="0.000563"/>
+<status status="PASS" start="2026-03-26T14:11:59.918456" elapsed="0.000741"/>
 </kw>
-<status status="PASS" start="2026-03-26T13:58:46.629459" elapsed="0.036200"/>
+<status status="PASS" start="2026-03-26T14:11:59.890241" elapsed="0.029093"/>
 </kw>
 <kw name="Quando clico no botão duplo clique" owner="elementosBasicos">
 <kw name="Duplo Clique No Elemento" owner="globalKeywords">
@@ -284,25 +284,25 @@
 <arg>${locator}</arg>
 <arg>timeout=${timeout}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-03-26T13:58:46.666596" elapsed="0.150852"/>
+<status status="PASS" start="2026-03-26T14:11:59.920662" elapsed="0.160023"/>
 </kw>
 <kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
 <arg>${locator}</arg>
 <arg>timeout=${timeout}</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" start="2026-03-26T13:58:46.817834" elapsed="0.068420"/>
+<status status="PASS" start="2026-03-26T14:12:00.081128" elapsed="0.071392"/>
 </kw>
 <kw name="Double Click Element" owner="SeleniumLibrary">
-<msg time="2026-03-26T13:58:46.887056" level="INFO">Double clicking element '//*[contains(text(),'Duplo clique')]'.</msg>
+<msg time="2026-03-26T14:12:00.153475" level="INFO">Double clicking element '//*[contains(text(),'Duplo clique')]'.</msg>
 <arg>${locator}</arg>
 <doc>Double clicks the element identified by ``locator``.</doc>
-<status status="PASS" start="2026-03-26T13:58:46.886648" elapsed="0.399928"/>
+<status status="PASS" start="2026-03-26T14:12:00.152986" elapsed="0.294126"/>
 </kw>
 <arg>${BOTAO_DUPLO_CLIQUE}</arg>
 <doc>Aguarda o elemento e executa um duplo clique.</doc>
-<status status="PASS" start="2026-03-26T13:58:46.666195" elapsed="0.620558"/>
+<status status="PASS" start="2026-03-26T14:11:59.920123" elapsed="0.527209"/>
 </kw>
-<status status="PASS" start="2026-03-26T13:58:46.665858" elapsed="0.620983"/>
+<status status="PASS" start="2026-03-26T14:11:59.919592" elapsed="0.527851"/>
 </kw>
 <kw name="Entao valido que o botão duplo clique possui um clique" owner="elementosBasicos">
 <kw name="Validar Texto No Elemento" owner="globalKeywords">
@@ -310,43 +310,43 @@
 <arg>${locator}</arg>
 <arg>timeout=${timeout}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-03-26T13:58:47.287971" elapsed="0.014234"/>
+<status status="PASS" start="2026-03-26T14:12:00.448855" elapsed="0.014739"/>
 </kw>
 <kw name="Element Should Contain" owner="SeleniumLibrary">
-<msg time="2026-03-26T13:58:47.320980" level="INFO">Element '//*[contains(text(),'Duplo clique')]' contains text '1'.</msg>
+<msg time="2026-03-26T14:12:00.484209" level="INFO">Element '//*[contains(text(),'Duplo clique')]' contains text '1'.</msg>
 <arg>${locator}</arg>
 <arg>${texto_esperado}</arg>
 <doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<status status="PASS" start="2026-03-26T13:58:47.302469" elapsed="0.018630"/>
+<status status="PASS" start="2026-03-26T14:12:00.463933" elapsed="0.020470"/>
 </kw>
 <arg>${BOTAO_DUPLO_CLIQUE}</arg>
 <arg>1</arg>
 <doc>Aguarda o elemento e valida se ele contém o texto esperado.</doc>
-<status status="PASS" start="2026-03-26T13:58:47.287546" elapsed="0.033675"/>
+<status status="PASS" start="2026-03-26T14:12:00.448332" elapsed="0.036249"/>
 </kw>
-<status status="PASS" start="2026-03-26T13:58:47.287117" elapsed="0.034218"/>
+<status status="PASS" start="2026-03-26T14:12:00.447795" elapsed="0.036889"/>
 </kw>
 <kw name="Fechar Sessao" owner="globalKeywords" type="TEARDOWN">
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2026-03-26T13:58:47.707763" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-03-26T14:12:00.921205" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2026-03-26T13:58:47.322060" elapsed="0.385911"/>
+<status status="PASS" start="2026-03-26T14:12:00.485531" elapsed="0.435886"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-03-26T13:58:47.708251" elapsed="0.060900"/>
+<status status="PASS" start="2026-03-26T14:12:00.921715" elapsed="0.061754"/>
 </kw>
 <doc>Tira uma evidência e fecha o navegador ao final do teste.</doc>
-<status status="PASS" start="2026-03-26T13:58:47.321684" elapsed="0.447671"/>
+<status status="PASS" start="2026-03-26T14:12:00.485139" elapsed="0.498504"/>
 </kw>
 <tag>CT-02</tag>
 <tag>guilherme.evangelista</tag>
 <tag>qa.front</tag>
-<status status="PASS" start="2026-03-26T13:58:45.990080" elapsed="1.779364"/>
+<status status="PASS" start="2026-03-26T14:11:59.218661" elapsed="1.765064"/>
 </test>
-<status status="PASS" start="2026-03-26T13:58:28.832723" elapsed="18.937393"/>
+<status status="PASS" start="2026-03-26T14:11:50.343299" elapsed="10.641129"/>
 </suite>
-<status status="PASS" start="2026-03-26T13:58:28.803839" elapsed="18.967133"/>
+<status status="PASS" start="2026-03-26T14:11:50.317667" elapsed="10.667467"/>
 </suite>
 <statistics>
 <total>
